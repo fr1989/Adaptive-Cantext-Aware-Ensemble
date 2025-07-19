@@ -27,6 +27,4 @@ jobs:
           python -m pip install -e . pytest
 
       - name: Run tests
-        run: |
-          cd Adaptive-Context-Aware-Ensemble 
-          python -m pytest --maxfail=1 --disable-warnings -q
+        run: python -m pytest --maxfail=1 --disable-warnings -q
